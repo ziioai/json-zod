@@ -1,0 +1,14 @@
+.status-bar {
+	/* filter: blur(8px); */
+	opacity: 0;
+	transition: filter 0.25s ease-in-out, opacity 0.25s ease-in-out;
+}
+.status-bar:hover {
+	/* filter: blur(0px); */
+	opacity: 1;
+}
+
+.status-bar .sync-status-icon.mod-error {
+	/* color: var(--text-error); */
+	color: inherit;
+}

@@ -1,0 +1,61 @@
+{
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "name": "json-zod",
+  "description": "Hello World.",
+  "keywords": [
+    "util"
+  ],
+  "author": "ZiioAI",
+  "license": "SEE LICENSE IN LICENSE",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ziioai/json-zod.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ziioai/json-zod/issues"
+  },
+  "homepage": "https://github.com/ziioai/json-zod#readme",
+  "files": [
+    "dist",
+    "LICENSE"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "test": "vitest",
+    "test:run": "vitest --run",
+    "press:dev": "vitepress dev press",
+    "press:build": "vitepress build press",
+    "press:preview": "vitepress preview press",
+    "pub": "npm publish --registry https://registry.npmjs.org"
+  },
+  "dependencies": {
+    "json5": "^2.2.3",
+    "lodash": "^4.17.21",
+    "zod": "^3.25.67"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@repo/biome-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@repo/vitest-config": "workspace:*",
+    "@types/lodash": "^4.17.18",
+    "@types/node": "^22.15.33",
+    "tsup": "^8.5.0",
+    "typescript": "~5.7.3",
+    "vitepress": "^1.6.3",
+    "vitest": "^2.1.8"
+  }
+}
